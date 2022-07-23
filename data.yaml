@@ -1,0 +1,5 @@
+train: ../pineapple/train/images
+val: ../pineapple/valid/images
+
+nc: 1
+names: ['pineapple']
