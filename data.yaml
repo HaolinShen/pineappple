@@ -1,5 +1,23 @@
-train: ../pineapple/train/images
-val: ../pineapple/valid/images
+# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
+# COCO128 dataset https://www.kaggle.com/ultralytics/coco128 (first 128 images from COCO train2017) by Ultralytics
+# Example usage: python train.py --data coco128.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco128  ← downloads here (7 MB)
 
-nc: 1
-names: ['pineapple']
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: ../datasets/pineapple  # dataset root dir
+train: train/images  # train images (relative to 'path') 128 images
+val: valid/images  # val images (relative to 'path') 128 images
+test:  # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['pineapple']  # class names
+
+
+# Download script/URL (optional)
+download: https://doc-08-0c-docs.googleusercontent.com/docs/securesc/5psgqpochcsu7bdessqgrmqefp0fqgih/2b531l88vnlsbslvu38q5pdhgs33qd86/1658583075000/02270472738815290367/02270472738815290367/1ZPqgx4Y6RBqdtBshqK04CAcdtp-oTvms?e=download&ax=ACxEAsZMb6ZNxy2nm7ts9EQVGdEg6U5lO8EO6fkjWi4diicraphBRnD5oYd1DwBKkM1U0KEC0diSvp7qAafgYW8GPQrosJsbEC0cUpUhyT5p7mMk2zq-zYXT_QwAaR6tJfLtFLMkyzCPwtn9gBjfYUqFBcejs7wKRjcIu-iiZN-W6t4v5wH0YqmZ5S11nLG8R60W2JifGOLkueng9n6AdS4y6HGeK9qxJHmUk2mViqPr8PcDYMBOVFAkyOsC3-Y9pnUqRKFT9-8u1Yb_L4SHSYLY24ua8_bKVuT4SY76FfZJo6u7pYRq_gIGxRLJ1ozoW27_-PQbjy1qFqMC2y733wXejZ31gUkTU93jIpBpgmdb7oSXM2087V_HAEMYNotwf_mSIRz58uQlTJrwRjj6BEWlK9xsRYyCBGc-7M-qGfiCWSB2_sQXsllBW2vfKr-FwmvQpubjUTzUst7MKLNHWpwKNXVCMViobBCqVuu1Iad-jG-4Aq031_heW8pX3d9NYhgM8GJMsQJeBcz_yPp4k0CH_fPYlKFjo0fauo3zMdChM_Qm8ahAa7yCc1OupppI9SgiDHV0TTvIYd9fY5qWPQ1q7CGPQJPJTNzrOahHtcsGuve7J-4q9cl-CPdBV8kP0GonKgZwEn6MYBMBZyQPParqfuqvwze__8bXdJ6qzB9uDhH8EWCmgqEH6JZzDa3nADZWInxegxr3PhbMIg&uuid=0c7b7439-055e-448a-835a-64774772ebaa&authuser=0&nonce=9j9dhjig0ptmo&user=02270472738815290367&hash=etqsn8l3n8t4c22ec4atptuo50hebe5r
+
